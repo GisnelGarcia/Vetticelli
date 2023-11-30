@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetticelli</title> 
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+       <nav>
+        <ul class="nav-bar">
+            <li class="logo"><a href="index.html"> <img src="./img/logo-negro.jpg" alt="logo"></a></li>
+            <input type="checkbox" id="check">
+            <span class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/carteras.html">Carteras</a></li>
+                <li><a href="./pages/monederos.html">Monederos</a></li>
+                <li><a href="./pages/coleccion.html">Colección 2024</a></li>
+                <li><a href="./pages/conocenos.html">Conocenos</a></li>
+                <li><a href="./pages/contactos.html">Contactos</a></li>
+                <label for="check" class="close-menu"> <img class="fas fa-times" src="./icons/x-regular-48.png" alt=""></label>
+            </span>
+            <label for="check" class="open-menu"> <img class="fas fa-bars" src="./icons/menu.png" alt=""></label>
+        </ul>
+       </nav>
+    </header>
+    <main>
+        <section class="hidden" id="novedades" data-animation="up">
+            <div class="caja-novedades">
+                <img src="./img/modelos/modelo-header.jpg" alt="modelo">  
+                <h2>NOVEDADES DE MODA</h2>
+                <a href="./pages/coleccion.html">Explora la nueva Colección</a>
+            </div>
+        </section> 
+
+        <section class="hidden" id="contenedorCarrusel" data-animation="up">
+            <div id="carrusel" class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/modelos/MODELO-7.png" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/modelos/MODELO-1.png" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/modelos/MODELO-2.png" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/modelos/MODELO-3.png" alt="Imagen 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/modelos/MODELO-4.png" alt="Imagen 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/modelos/MODELO-5.png" alt="Imagen 6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/modelos/MODELO-6.png" alt="Imagen 7">
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"> <img src="./icons/left-arrow-alt-solid-24.png" alt=""></span>
+                </a>
+                <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"><img src="./icons/right-arrow-alt-solid-24.png" alt=""></span>
+                </a>
+            </div>
+        </section>
+        <section class="hidden" id="monederos" data-animation="up">
+            <div class="info-monedero">
+                <div class= "sub-titulo">
+                  <h2>MONEDEROS HECHOS DE CUERO 100% VACUNO</h2>  
+                </div>
+                <div class="descripcion1">
+                   <h3> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, molestiae sunt! Quae fugiat harum voluptatum eius molestiae quia? </h3> 
+                </div>
+            </div>
+            <div class="img-monedero">
+                <a class="boton1" href="./pages/monederos.html">Explora los monederos</a>
+            </div>
+        </section>
+        <section class="hidden" id="historia" data-animation="up">
+            <video class="video" width="364" height="364"  muted controls>
+                <source src="videos/video.mp4" type="video/mp4">
+            </video>
+            <div class="contenedorHistoria">
+                <div class="sub-titulo">
+                   <h2>70 AÑOS DISEÑANDO MODELOS DE ALTA GAMA</h2> 
+                </div>
+                <div class="descripcion2">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa, recusandae ipsam</h3>
+                </div>
+                <div class="botonHistoria">
+                    <a href="./pages/conocenos.html">Conocenos</a> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="fondo">
+        <div class="contenedor-footer">
+            <div class="informacion-footer">
+                <div class="institucional">
+                    <h3>INSTITUCIONAL</h3>
+                    <a href="./pages/conocenos.html">¿QUIENES SOMOS?</a>
+                    <a href="#">TERMINOS Y CONDICIONES</a> <!--PDF CON INFORMACION-->
+                </div>
+                <div class="ayuda">
+                    <h3>¿NECESITAS AYUDA?</h3>
+                    <a href="./pages/contactos.html">CONTACTOS</a>
+                    <a href="#">ENVIOS Y COSTOS</a> <!--PDF CON INFORMACION-->
+                    <a href="#">POLITICAS DE CAMBIO</a> <!--PDF CON INFORMACION-->
+                    <a href="#">PREGUNTAS FRECUENTES</a> <!--PDF CON INFORMACION-->
+                </div>
+                <div class="redes">
+                    <div class="text-redes">
+                    <h3>REDES SOCIALES</h3>
+                    </div>
+                    <div class="contenedor-icons">
+                        <a href="https://api.whatsapp.com/send?phone=1123929708&text=Hola%20" target="_blank"><img src="./icons/whatsapp.png"></a>
+                        <a href="https://www.instagram.com/vetticelli/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./icons/instagram.png"></a>
+                        <a href="https://facebook.com" target="_blank"><img src="./icons/facebook.png"></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="contenedor-del-logo">
+                <img src="./img/logo-blanco.jpg" alt="logo">
+            </div>
+        </div>
+    </footer>
+    <script src="./js/js.js"></script>
+    
+</body>
+
+</html>

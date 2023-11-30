@@ -1,0 +1,1191 @@
+  @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    text-decoration: none
+}
+body{
+    font-family: 'Julius Sans One', sans-serif;
+    --color1: #FFF;
+    --color2: #181818;
+}
+/* ----------- HEADER ---------------- */
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color1);
+    padding: 12px 20px;
+}
+.logo img {width: 290px;}
+.menu { display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color2);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color2);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after{width: 100%;}
+.open-menu , .close-menu{
+    position: absolute;
+    color: var(--color2);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+#check{display: none;}
+
+ /* ----------- NOVEDADES ---------------- */
+#novedades{
+    align-content: center;
+}
+ #novedades .caja-novedades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .caja-novedades{
+    margin-top: 30px; 
+ }
+ .caja-novedades img{
+    width: 350px;
+    height: 450px;
+    padding-bottom: 20px;
+ }
+ .caja-novedades h2{
+    padding-bottom: 20px;
+ }
+ .caja-novedades a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px ;
+    margin-bottom: 80px;
+ }
+ /* ----------- CARRUSEL ---------------- */
+#contenedorCarrusel{
+    margin-bottom: 80px;
+}
+.carousel {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 250px;
+    height:350px;
+    margin-left: 80px;
+    margin-top: 25px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    transform: translateY(-260%);
+    font-size: 2rem;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.carousel-control-prev img,
+.carousel-control-next img{
+    width: 50px;
+    height: 50px;
+}
+.carousel-control-prev {
+    left: 200px;
+}
+.carousel-control-next {
+    right: 280px;
+}
+ /* ----------- SECCION DEL MONEDERO ---------------- */
+ #monederos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ .info-monedero{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    text-align: center;
+    line-height: 28px; 
+ }
+ .img-monedero{
+    width: 400px;
+    height: 400px;
+    background-image: url("../img/monederos/monedero-boton.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+ }
+ .img-monedero a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px;
+    margin-bottom: 15px; 
+ }
+ /* ----------- SECCION HISTORIA ---------------- */
+ #historia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+ }
+ .contenedorHistoria{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    text-align: center;
+    line-height: 28px; 
+ }
+.contenedorHistoria a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px;
+}
+.botonHistoria{
+    margin-top: 20px;
+}
+
+/* ---------------------- TRANSICIONES DEL INDEX ------------------ 
+.hidden{
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 1.2s ease-in-out;
+
+}
+
+.mostrar{
+    transform: scale(1);
+    opacity: 1;
+} */ 
+ /* ---------------------- FOOTER ------------------ */
+ .fondo {
+    background-image: url(../img/fondo-footer.jpg);
+}
+.contenedor-del-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.informacion-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-bottom: 15px;
+}
+.institucional {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.institucional h3,
+.institucional a {
+    color: #ffffff;
+    padding-top: 20px;
+}
+.ayuda {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.ayuda h3,
+.ayuda a {
+    color: #ffffff;
+    padding-top: 20px;
+}
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes .text-redes {
+    color: #ffffff;
+}
+.redes .contenedor-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contenedor-footer {
+    padding-top: 100px;
+}
+/* ---------------------- PAGES COLECCION ------------------ */
+.sub-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-areas: 
+    "produc1 produc2 produc3"
+    "produc4 produc5 produc6"
+    "img img img"
+    "produc7 produc8 produc9"
+    ;
+    gap: 2em 1em;
+}
+ .grid .element1 img,
+ .grid .element2 img,
+ .grid .element3 img,
+ .grid .element4 img,
+ .grid .element5 img,
+ .grid .element6 img,
+ .grid .element7 img,
+ .grid .element8 img,
+ .grid .element9 img{
+    width: 220px;
+    height: 340px;
+    margin-bottom: 20px;
+}
+.grid a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px ;
+}
+
+.grid .element1{
+    grid-area: produc1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid .element2{
+    grid-area: produc2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid .element3{
+    grid-area: produc3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid .element4{
+    grid-area: produc4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid .element5{
+    grid-area: produc5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid .element6{
+    grid-area: produc6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgDecoracion{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+}
+.imgDecoracion img{
+    width: 1340px ;
+    height: 410px; ;
+}
+.grid .element7{ 
+    grid-area: produc7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid .element8{
+    grid-area: produc8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid .element9{
+    grid-area: produc9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ---------------------- PAGES CARTERAS ------------------ */
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-areas: 
+    "produc1 produc2 produc3 produc4"
+    "produc5 produc6 produc7 produc8"
+    "produc9 produc10 produc11 produc12"
+    "produc13 produc14 produc15 produc16"
+    ;
+    gap: 2em 1em;
+}
+.grid2 img{ 
+    width: 220px;
+    height: 340px;
+    margin-bottom: 20px;
+}
+.grid2 .element1{
+    grid-area: produc1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element2{
+    grid-area: produc2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element3{
+    grid-area: produc3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element4{
+    grid-area: produc4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element5{
+    grid-area: produc5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element6{
+    grid-area: produc6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element7{ 
+    grid-area: produc7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element8{
+    grid-area: produc8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element9{
+    grid-area: produc9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element10{
+    grid-area: produc10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element11{
+    grid-area: produc11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element12{
+    grid-area: produc12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element13{
+    grid-area: produc13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element14{
+    grid-area: produc14;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element15{
+    grid-area: produc15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 .element16{
+    grid-area: produc16;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid2 a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px ;
+    margin-bottom: 10px;
+}
+.grid2 p{
+    padding-bottom: 10px;
+}
+/* ---------------------- PAGES MONEDEROS ------------------ */
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-areas: 
+    "produc1 produc2 produc3 produc4"
+    "produc5 produc6 produc7 produc8"
+    "produc9 produc10 produc11 produc12"
+    "produc13 produc14 produc15 produc16"
+    ;
+    gap: 2em 1em;
+}
+.grid3 img{ 
+    width: 220px;
+    height: 340px;
+    margin-bottom: 20px;
+}
+.grid3 .element1{
+    grid-area: produc1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element2{
+    grid-area: produc2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element3{
+    grid-area: produc3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element4{
+    grid-area: produc4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element5{
+    grid-area: produc5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element6{
+    grid-area: produc6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element7{ 
+    grid-area: produc7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element8{
+    grid-area: produc8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element9{
+    grid-area: produc9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element10{
+    grid-area: produc10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element11{
+    grid-area: produc11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element12{
+    grid-area: produc12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element13{
+    grid-area: produc13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element14{
+    grid-area: produc14;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element15{
+    grid-area: produc15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 .element16{
+    grid-area: produc16;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid3 a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px ;
+    margin-bottom: 10px;
+}
+.grid3 p{
+    padding-bottom: 10px;
+}
+ /* ---------------------- PAGES CONTACTOS ------------------ */
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info .tex1{
+    display: flex;
+    padding: 10px;
+    align-items: center; 
+    text-align: center; 
+    line-height: 28px; 
+    justify-content: center;
+}
+.tex1 p{
+    width: 800px;
+}
+.tex2 img{
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+.tex2{
+    display: flex;
+    padding: 10px;
+    align-items: center;  
+    justify-content: center;
+}
+.tex3 img{
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+.tex3{
+    display: flex;
+    padding: 10px;
+    align-items: center;  
+    justify-content: center;
+}
+.tex4 img{
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+   
+}
+.tex4{
+    display: flex;
+    padding: 10px;
+    align-items: center; 
+    text-align: center; 
+    line-height: 28px; 
+    justify-content: center;
+}
+#contenedorMapa{
+    display: flex;
+    justify-content: center;
+}
+form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+.input1{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.input2{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.input3{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.input4{
+    width: 500px;
+    height: 90px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.input5{
+    width: 150px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px ;
+    margin-bottom: 10px;
+}
+/* ---------------------- PAGES CONOCENOS ------------------ */
+#contenedorTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.texto{
+    text-align: center;
+    width: 900px;
+    line-height: 28px; 
+}
+#fotos-fabrica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+/* ---------------------- PAGES PRODUCTO ------------------ */
+.contenedorProducto{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#info{
+    display: block;
+}
+
+#contenedorExtra{
+    display: flex;
+    justify-content: center;
+}
+.extra{
+    width: 1300px;
+    line-height: 25px; 
+}
+.extra u{
+    text-decoration: underline;
+}
+/* ----------- MEDIA QUERY ---------------- */
+@media only screen and (max-width: 768px){
+    /* ----------- HEADER ---------------- */
+        .menu{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 80%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          z-index: 100;
+          background-color: var(--color2);
+          transition: all 0.2s ease-in-out;
+          }
+          .menu li {margin-top: 40px;}
+          .menu li a {padding: 10px;}
+          .open-menu , .close-menu{display: block;}
+          #check:checked ~ .menu{right: 0;} 
+          .menu li a {
+              display: inline-block;
+              text-decoration: none;
+              color: var(--color1);
+              text-align: center;
+              transition: 0.15s ease-in-out;
+              position: relative;
+              text-transform: uppercase;
+          } 
+          .menu li a::after{
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 1px;
+              background-color: var(--color1);
+              transition: 0.15s ease-in-out;
+          }
+/* ----------- SECCION DEL MONEDERO ---------------- */
+   #monederos{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+    }
+    .info-monedero{
+       display: flex;
+       flex-direction: column;
+       width: 350px;
+       text-align: center;
+       line-height: 28px; 
+       margin-bottom: 10px;
+    }
+    .img-monedero{
+       width: 350px;
+       height: 250px;
+       background-image: url("../img/monederos/monedero-boton.jpg");
+       background-size: cover;
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+       border-radius: 30px;
+    }
+    /* ----------- SECCION HISTORIA ---------------- */
+    #historia{
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+       justify-content: space-evenly;
+       margin-top: 50px;
+    }
+    .contenedorHistoria{
+       display: flex;
+       flex-direction: column;
+       width: 350px;
+       text-align: center;
+       line-height: 28px; 
+    }
+   .contenedorHistoria a{
+       background-color: #000000;
+       color: #ffffff;
+       padding: 7px;
+       border-radius:12px;
+   }
+   .botonHistoria{
+       margin-top: 20px;
+       margin-bottom: 30px;
+   }
+   /* ---------------------- FOOTER ------------------ */
+   .contenedor-del-logo img {
+       width: 230px;
+       height: auto;
+   }
+   .informacion-footer h3{
+       font-size: 10px;
+   }
+   .informacion-footer a{
+       font-size: 10px;
+   }
+   .contenedor-icons img{
+       width: 28px;
+       height: auto;
+   }
+   .redes .contenedor-icons {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+   }
+   /* ---------------------- PAGES COLECCION ------------------ */
+   .sub-titulo{
+       display: flex;
+       justify-content: center;
+       padding: 50px;
+       font-size: 13px; 
+   }
+   .grid{
+       display: grid;
+       grid-template-columns: repeat(2 , 1fr);
+       grid-template-areas: 
+       "produc1 produc2"
+       "produc3 produc3"
+       "produc4 produc5"
+       "produc6  produc6"
+       "img img"
+       "produc7 produc8"
+       "produc9 produc9"
+       ;
+       gap: 2em 1em;
+   }
+    .grid .element1 img,
+    .grid .element2 img,
+    .grid .element3 img,
+    .grid .element4 img,
+    .grid .element5 img,
+    .grid .element6 img,
+    .grid .element7 img,
+    .grid .element8 img,
+    .grid .element9 img{
+        width: 130px;
+        height: 220px;
+       margin-bottom: 20px;
+   }
+   .imgDecoracion img{
+       width: 100%;
+       height: auto ;
+   }
+   
+   /* ---------------------- PAGES CARTERAS ------------------ */
+   .grid2{
+       display: grid;
+       grid-template-columns: repeat(3 , 1fr);
+       grid-template-areas: 
+       "produc1 produc2 produc3"
+       "produc4 produc5 produc6"
+       "produc7 produc8 produc9"
+       "produc10 produc11 produc12"
+       "produc10 produc13 produc14"
+       "produc15 produc16 produc16"
+       ;
+       gap: 2em 1em;
+   }
+   .grid2 img{ 
+       width: 110px;
+       height: 220px;
+       margin-bottom: 10px;
+   }
+   .grid2 a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px ;
+    margin-bottom: 10px;
+    font-size: 10px;
+    }
+    .grid2 p{
+        font-size: 10px;
+    }
+    .grid2 .element10 img{
+        height: 100%;
+    }
+    .grid2 .element16 img{
+        width: 100%;
+    }
+    
+    /* ---------------------- PAGES CONOCENOS ------------------ */
+    #contenedorTexto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .texto{
+        text-align: center;
+        width: 90%;
+        line-height: 28px; 
+        font-size: 15px;
+    }
+    #fotos-fabrica img{
+        flex: 1 0 auto;
+        margin: 0 10px;
+        width: 138px;
+        height: auto;
+    }
+    #fotos-fabrica{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    /* ---------------------- PAGES CONTACTOS ------------------ */
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+#contenedorMapa{
+    width: 100%;
+}
+form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+.input1{
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.input2{
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.input3{
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.input4{
+    width: 90%;
+    height: 90px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.input5{
+    width: 90%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px ;
+    margin-bottom: 10px;
+}
+.info .tex1{
+    display: flex;
+    padding: 10px;
+    align-items: center; 
+    text-align: center; 
+    line-height: 28px; 
+    justify-content: center;
+}
+.tex1 p{
+    width: 100%;
+}
+.tex4 img{
+    display: none;
+} 
+/* ----------- CARRUSEL ---------------- */
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    overflow: scroll;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel img {
+    flex: 1 0 auto;
+    margin: 0 10px;
+    width: 250px;
+    height:350px;
+    
+}
+.carousel-inner{
+    width: 80%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+.carousel-control-prev img,
+.carousel-control-next img{
+    display: none;
+}
+/* ---------------------- PAGES MONEDEROS ------------------ */
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-areas: 
+    "produc1 produc2 produc3"
+    "produc4 produc5 produc3"
+    "produc6 produc7 produc8"
+    "produc9 produc10 produc11"
+    "produc12 produc13 produc14"
+    "produc15 produc16 produc16"
+    ;
+    gap: 2em 1em;
+}
+.grid3 img{ 
+    width: 110px;
+    height: 220px;
+    margin-bottom: 10px;
+}
+.grid3 a{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px;
+    border-radius:12px ;
+    margin-bottom: 10px;
+    font-size: 10px;
+    }
+    .grid3 p{
+        font-size: 10px;
+    }
+    .grid3 .element3 img{
+        height: 100%;
+    }
+    .grid3 .element16 img{
+        width: 100%;
+    }
+    /* ---------------------- PAGES PRODUCTO ------------------ */
+.contenedorProducto{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly ;
+    margin-top: 50px;
+    
+}
+#img-producto img{
+    width: 180px ;
+    height: 350px;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+#info h2{
+    font-size: 20px;
+}
+#info{
+    margin-left: 16px;
+}
+
+#contenedorExtra{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#contenedorExtra p{
+    width: 90%;
+    margin-left: 20px;
+}
+}
