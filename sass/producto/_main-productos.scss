@@ -1,0 +1,22 @@
+.contenedorProducto{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 50px;
+        #info{
+            display: block;
+        }
+}
+#contenedorExtra{
+    display: flex;
+    justify-content: center;
+        .extra{
+            width: 1300px;
+            line-height: 25px; 
+                u{
+                    text-decoration: underline;
+                }
+        }
+}
+
+ 

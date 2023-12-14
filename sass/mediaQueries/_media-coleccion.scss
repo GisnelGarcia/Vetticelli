@@ -1,0 +1,39 @@
+@media only screen and (max-width: 768px){
+    .sub-titulo{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        font-size: 13px; 
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-areas: 
+        "produc1 produc2"
+        "produc3 produc3"
+        "produc4 produc5"
+        "produc6  produc6"
+        "img img"
+        "produc7 produc8"
+        "produc9 produc9"
+        ;
+        gap: 2em 1em;
+            .element1 img,
+            .element2 img,
+            .element3 img,
+            .element4 img,
+            .element5 img,
+            .element6 img,
+            .element7 img,
+            .element8 img,
+            .element9 img{
+                width: 130px;
+                height: 220px;
+                margin-bottom: 20px;
+            }
+            .imgDecoracion img{
+                    width: 100%;
+                    height: auto ;
+            }
+    }
+ }

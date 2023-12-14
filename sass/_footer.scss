@@ -1,0 +1,77 @@
+.fondo {
+    background-image: url(../img/fondo-footer.jpg);
+        .contenedor-footer {
+            padding-top: 100px;
+            .informacion-footer {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: baseline;
+                padding-bottom: 15px;
+                    .institucional {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: start;
+                            h3,
+                            a {
+                                color: #ffffff;
+                                padding-top: 20px;
+                            }
+                    }
+                    .ayuda {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: start;
+                        h3,
+                        a {
+                            color: #ffffff;
+                            padding-top: 20px;
+                        }
+                    }  
+                    .redes {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .text-redes {
+                            color: #ffffff;
+                        }
+                        .contenedor-icons {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                        }
+                    }
+            }
+            .contenedor-del-logo {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+    }
+}
+@media only screen and (max-width: 768px){
+    .informacion-footer {
+     padding: 15px;
+        a{
+            font-size: 10px;
+        }
+        h3{
+        font-size: 10px;
+        }
+     }
+    .contenedor-del-logo img {
+        width: 230px;
+        height: auto;
+    }
+     
+    .redes .contenedor-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+            img{
+                    width: 28px;
+                    height: auto;
+                }
+    }
+ }

@@ -1,0 +1,62 @@
+@media only screen and (max-width: 768px){
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+        .tex1{
+        display: flex;
+        padding: 10px;
+        align-items: center; 
+        text-align: center; 
+        line-height: 28px; 
+        justify-content: center;
+        p{
+            width: 100%;
+        }
+    }
+    .tex4 img{
+    display: none;
+    }
+}
+#contenedorMapa{
+    width: 100%;
+}
+form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+        .input1{
+        width: 90%;
+        height: 40px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .input2{
+        width: 90%;
+        height: 40px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .input3{
+        width: 90%;
+        height: 40px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .input4{
+        width: 90%;
+        height: 90px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .input5{
+        width: 90%;
+        background-color: var(--color2);
+        color: var(--color1);
+        padding: 7px;
+        border-radius:12px ;
+        margin-bottom: 10px;
+        }
+    }
+}

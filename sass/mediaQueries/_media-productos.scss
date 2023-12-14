@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px){
+    .contenedorProducto{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-evenly ;
+        margin-top: 50px;
+            #info{
+                margin-left: 16px;
+                    h2{
+                        font-size: 20px;
+                    }
+        }
+    }
+    #img-producto img{
+        width: 180px ;
+        height: 350px;
+        border-radius: 30px;
+        margin-left: 15px;
+    }
+
+    #contenedorExtra{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+            p{
+                width: 90%;
+                margin-left: 20px;
+            }
+    }
+}

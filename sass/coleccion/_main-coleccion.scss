@@ -1,0 +1,141 @@
+.sub-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-areas: 
+    "produc1 produc2 produc3"
+    "produc4 produc5 produc6"
+    "img img img"
+    "produc7 produc8 produc9"
+    ;
+    gap: 2em 1em;
+        .element1 img,
+        .element2 img,
+        .element3 img,
+        .element4 img,
+        .element5 img,
+        .element6 img,
+        .element7 img,
+        .element8 img,
+        .element9 img{
+            width: 220px;
+            height: 340px;
+            margin-bottom: 20px;
+            transition: 1s;
+    }
+        a{
+            background-color: var(--color2);
+            color: var(--color1);
+            padding: 7px;
+            border-radius:12px ;
+            margin-bottom: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+        }
+        a:before {
+            content: '';
+            position: absolute;
+            border: rgb(7, 7, 7) solid 4px;
+            border-radius: 12px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: top, right, bottom, left;
+            transition-property: top, right, bottom, left;
+        }
+        a:hover:before,  a:focus:before, a:active:before {
+            top: -8px;
+            right: -8px;
+            bottom: -8px;
+            left: -8px;
+        }
+        .element1{
+            grid-area: produc1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .element2{
+            grid-area: produc2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .element3{
+            grid-area: produc3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .element4{
+            grid-area: produc4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .element5{
+            grid-area: produc5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .element6{
+            grid-area: produc6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .element7{ 
+            grid-area: produc7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .element8{
+            grid-area: produc8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .element9{
+            grid-area: produc9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgDecoracion{
+            grid-area: img;
+            display: flex;
+            justify-content: center;
+                img{
+                    width: 1340px ;
+                    height: 410px; ;
+                }
+        }
+}
+
+
+ 

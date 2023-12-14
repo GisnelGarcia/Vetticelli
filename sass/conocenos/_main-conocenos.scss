@@ -1,0 +1,17 @@
+#contenedorTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+        .texto{
+            text-align: center;
+            width: 900px;
+            line-height: 28px; 
+    }
+}
+#fotos-fabrica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}

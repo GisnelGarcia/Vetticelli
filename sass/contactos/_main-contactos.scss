@@ -1,0 +1,94 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .tex1{
+            display: flex;
+            padding: 10px;
+            align-items: center; 
+            text-align: center; 
+            line-height: 28px; 
+            justify-content: center;
+                p{
+                    width: 800px;
+                }
+    }
+    .tex2{
+        display: flex;
+        padding: 10px;
+        align-items: center;  
+        justify-content: center;
+            img{
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
+            }
+    }
+    .tex3{
+        display: flex;
+        padding: 10px;
+        align-items: center;  
+        justify-content: center;
+            img{
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
+            }
+    }
+    .tex4{
+        display: flex;
+        padding: 10px;
+        align-items: center; 
+        text-align: center; 
+        line-height: 28px; 
+        justify-content: center;
+            img{
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
+            
+            }
+    }
+}
+#contenedorMapa{
+    display: flex;
+    justify-content: center;
+}
+form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+        .input1{
+        width: 500px;
+        height: 40px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        }
+    .input2{
+        width: 500px;
+        height: 40px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        }
+    .input3{
+        width: 500px;
+        height: 40px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        }
+    .input4{
+        width: 500px;
+        height: 90px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        }
+    .input5{
+        width: 150px;
+        background-color: var(--color2);
+        color: var(--color1);
+        padding: 7px;
+        border-radius:12px ;
+        margin-bottom: 10px;
+        }
+}

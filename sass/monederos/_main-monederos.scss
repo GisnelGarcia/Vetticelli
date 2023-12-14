@@ -1,0 +1,188 @@
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-areas: 
+    "produc1 produc2 produc3 produc4"
+    "produc5 produc6 produc7 produc8"
+    "produc9 produc10 produc11 produc12"
+    "produc13 produc14 produc15 produc16"
+    ;
+    gap: 2em 1em;
+        img{ 
+            width: 220px;
+            height: 340px;
+            margin-bottom: 20px;
+            transition: 1s;
+        }
+        img:hover{
+            transition: 1s;
+            transform: scale(1.2);
+        }
+        .element1{
+        grid-area: produc1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+        .element2{
+        grid-area: produc2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element3{
+        grid-area: produc3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element4{
+        grid-area: produc4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element5{
+        grid-area: produc5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element6{
+        grid-area: produc6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element7{ 
+        grid-area: produc7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element8{
+        grid-area: produc8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element9{
+        grid-area: produc9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element10{
+        grid-area: produc10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element11{
+        grid-area: produc11;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element12{
+        grid-area: produc12;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element13{
+        grid-area: produc13;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element14{
+        grid-area: produc14;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element15{
+        grid-area: produc15;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .element16{
+        grid-area: produc16;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    a{
+        background-color: var(--color2);
+        color: var(--color1);
+        padding: 7px;
+        border-radius:12px ;
+        margin-bottom: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+    }
+    a:before {
+        content: '';
+        position: absolute;
+        border: rgb(7, 7, 7) solid 4px;
+        border-radius: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: top, right, bottom, left;
+        transition-property: top, right, bottom, left;
+    }
+    a:hover:before, a:focus:before, a:active:before {
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+    }
+    p{
+        padding-bottom: 10px;
+    }
+} 
+ 
+   
+ 

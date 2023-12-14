@@ -1,0 +1,37 @@
+/*ROOT CSS*/
+@import "./reset";
+
+/*ESTILOS HEADER Y FOOTER*/
+@import "./header";
+@import "./footer";
+
+/*ESTILO DEL INDEX*/
+@import "./index/main-index";
+ 
+/*ESTILO DE PAGES CARTERAS*/
+@import "../sass/carteras/main-carteras";
+
+/*ESTILO DE PAGES COLECCION*/
+@import "./coleccion/main-coleccion";
+
+/*ESTILO DE PAGES CONOCENOS*/
+@import "./conocenos/main-conocenos";
+
+/*ESTILO DE PAGES CONTACTOS*/
+@import "./contactos/main-contactos";
+
+/*ESTILO DE PAGES MONEDEROS*/
+@import "./monederos/main-monederos";
+
+/*ESTILO DE PAGES PRODUCTOS*/
+@import "./producto/main-productos";
+
+/*ESTILO PARA MEDIA QUERIES*/
+@import "../sass/mediaQueries/media-carteras";
+@import "../sass/mediaQueries/media-coleccion";
+@import "../sass/mediaQueries/media-conocenos";
+@import "../sass/mediaQueries/media-contactos";
+@import "../sass/mediaQueries/media-index";
+@import "../sass/mediaQueries/media-monederos";
+@import "../sass/mediaQueries/media-productos";
+
