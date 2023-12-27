@@ -1,3 +1,4 @@
+/* ----------- MEDIA QUERIES PARA TABLET ---------------- */
 @media only screen and (max-width: 768px){
    /* ---------------------- PAGES MONEDEROS ------------------ */
    .grid3{
@@ -5,14 +6,14 @@
        grid-template-columns: repeat(3 , 1fr);
        grid-template-areas: 
        "produc1 produc2 produc3"
-       "produc4 produc5 produc3"
-       "produc6 produc7 produc8"
-       "produc9 produc10 produc11" 
-       "produc12 produc13 produc14"
-       "produc15 produc16 produc16"
+       "produc4 produc5 produc6"
+       "produc7 produc8 produc9"
+       "produc10 produc11 produc12" 
+       "produc13 produc14 produc15"
+       "produc16 produc16 produc16"
        ;
        gap: 2em 1em;
-            img{ 
+            img{  
                 width: 110px;
                 height: 220px;
                 margin-bottom: 10px;
@@ -28,11 +29,46 @@
             p{
                 font-size: 10px;
                 }
-            .element3 img{
-                height: 100%;
-                }
             .element16 img{
-                 width: 100%;
+                 width: 40%;
                 }
    }
 }
+ /* ----------- MEDIA QUERIES PARA TELEFONOS PEQUEÑOS ---------------- */
+ @media only screen and (max-width: 320px) {
+/* ---------------------- PAGES MONEDEROS ------------------ */
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-areas: 
+    "produc1 produc2"
+    "produc3 produc4"
+    "produc5 produc6"
+    "produc7 produc8" 
+    "produc9 produc10"
+    "produc11 produc12"
+    "produc13 produc14"
+    "produc15 produc16"
+    ;
+    gap: 2em 1em;
+         img{  
+             width: 110px;
+             height: 220px;
+             margin-bottom: 10px;
+         }
+         a{
+             background-color: var(--color2);
+             color: var(--color1);
+             padding: 7px;
+             border-radius:12px ;
+             margin-bottom: 10px;
+             font-size: 10px;
+             }
+         p{
+             font-size: 10px;
+             }
+         .element16 img{
+              width: 75%;
+             }
+}
+ }

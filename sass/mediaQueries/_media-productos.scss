@@ -1,3 +1,4 @@
+/* ----------- MEDIA QUERIES PARA TABLET ---------------- */
 @media only screen and (max-width: 768px){
     .contenedorProducto{
         display: flex;
@@ -15,9 +16,9 @@
         width: 180px ;
         height: 350px;
         border-radius: 30px;
-        margin-left: 15px;
+        justify-content: center;
     }
-
+ 
     #contenedorExtra{
         display: flex;
         justify-content: center;
@@ -27,4 +28,37 @@
                 margin-left: 20px;
             }
     }
+}
+/* ----------- MEDIA QUERIES PARA TELEFONOS PEQUEÑOS ---------------- */
+@media only screen and (max-width: 320px){
+   .contenedorProducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+        #img-producto{
+            margin-bottom: 30px;
+
+            img{
+                width: 200px;
+            }
+        }
+        #info{
+            margin-left: 0px;
+            h2{
+            text-align: center;
+            }
+             h3{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        
+   }
+   
+
 }

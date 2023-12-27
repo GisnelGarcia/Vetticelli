@@ -24,16 +24,3 @@ document.addEventListener('DOMContentLoaded', function () {
         carouselInner.style.transform = 'translateX(' + newTransformValue + ')';
     }  
 });
-
-/* variable para acceder las secciones con la clase "hiden" 
-const seccionesOcutas = document.querySelectorAll ('.hidden');
-
-/* el observador 
-const observer = new IntersectionObserver ((entries)=>{
-    entries.forEach((entry)=>{
-        entry.target.classList.toggle('mostrar' , entry.
-        isIntersecting);
-    })
-})
-
-seccionesOcultas.forEach((seccion)=>observer.observe (seccion)); */

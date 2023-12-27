@@ -1,5 +1,5 @@
 /* ----------- NOVEDADES ---------------- */
-#novedades{
+#novedades{ 
     align-content: center;
         .caja-novedades{
             display: flex;
@@ -20,7 +20,33 @@
                     color: var(--color1);
                     padding: 7px;
                     border-radius:12px ;
-                    margin-bottom: 80px;
+                    margin-bottom: 60px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    -webkit-transform: perspective(1px) translateZ(0);
+                    transform: perspective(1px) translateZ(0);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    position: relative;
+                }
+                a:before {
+                    content: '';
+                    position: absolute;
+                    border: rgb(7, 7, 7) solid 4px;
+                    border-radius: 12px;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    -webkit-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+                    -webkit-transition-property: top, right, bottom, left;
+                    transition-property: top, right, bottom, left;
+                }
+                a:hover:before,  a:focus:before, a:active:before {
+                    top: -8px;
+                    right: -8px;
+                    bottom: -8px;
+                    left: -8px;
                 }
         }
 }
@@ -91,13 +117,39 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-            a{
-                background-color: var(--color2);
-                color: var(--color1);
-                padding: 7px;
-                border-radius:12px;
-                margin-bottom: 15px; 
-            }
+        a{
+            background-color: var(--color2);
+            color: var(--color1);
+            padding: 7px;
+            border-radius:12px ;
+            margin-bottom: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+        }
+        a:before {
+            content: '';
+            position: absolute;
+            border: rgb(7, 7, 7) solid 4px;
+            border-radius: 12px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: top, right, bottom, left;
+            transition-property: top, right, bottom, left;
+        }
+        a:hover:before,  a:focus:before, a:active:before {
+            top: -8px;
+            right: -8px;
+            bottom: -8px;
+            left: -8px;
+        }
     }
  }
  /* ----------- SECCION HISTORIA ---------------- */
@@ -118,7 +170,34 @@
                 background-color: var(--color2);
                 color: var(--color1);
                 padding: 7px;
-                border-radius:12px;
+                border-radius:12px ;
+                margin-bottom: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                position: relative;
+            }
+            a:before {
+                content: '';
+                position: absolute;
+                border: rgb(7, 7, 7) solid 4px;
+                border-radius: 12px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-property: top, right, bottom, left;
+                transition-property: top, right, bottom, left;
+            }
+            a:hover:before,  a:focus:before, a:active:before {
+                top: -8px;
+                right: -8px;
+                bottom: -8px;
+                left: -8px;
             }
             .botonHistoria{
                 margin-top: 20px;

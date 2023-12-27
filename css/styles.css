@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*ROOT CSS*/
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
 * {
@@ -230,7 +231,33 @@ body {
   color: var(--color1);
   padding: 7px;
   border-radius: 12px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+#novedades .caja-novedades a:before {
+  content: "";
+  position: absolute;
+  border: rgb(7, 7, 7) solid 4px;
+  border-radius: 12px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+#novedades .caja-novedades a:hover:before, #novedades .caja-novedades a:focus:before, #novedades .caja-novedades a:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
 }
 
 /* ----------- CARRUSEL ---------------- */
@@ -315,6 +342,32 @@ body {
   padding: 7px;
   border-radius: 12px;
   margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+#monederos .img-monedero a:before {
+  content: "";
+  position: absolute;
+  border: rgb(7, 7, 7) solid 4px;
+  border-radius: 12px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+#monederos .img-monedero a:hover:before, #monederos .img-monedero a:focus:before, #monederos .img-monedero a:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
 }
 
 /* ----------- SECCION HISTORIA ---------------- */
@@ -338,6 +391,33 @@ body {
   color: var(--color1);
   padding: 7px;
   border-radius: 12px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+#historia .contenedorHistoria a:before {
+  content: "";
+  position: absolute;
+  border: rgb(7, 7, 7) solid 4px;
+  border-radius: 12px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+#historia .contenedorHistoria a:hover:before, #historia .contenedorHistoria a:focus:before, #historia .contenedorHistoria a:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
 }
 #historia .contenedorHistoria .botonHistoria {
   margin-top: 20px;
@@ -750,24 +830,28 @@ form .input1 {
   height: 40px;
   border-radius: 20px;
   margin-bottom: 20px;
+  padding-left: 15px;
 }
 form .input2 {
   width: 500px;
   height: 40px;
   border-radius: 20px;
   margin-bottom: 20px;
+  padding-left: 15px;
 }
 form .input3 {
   width: 500px;
   height: 40px;
   border-radius: 20px;
   margin-bottom: 20px;
+  padding-left: 15px;
 }
 form .input4 {
   width: 500px;
   height: 90px;
   border-radius: 20px;
   margin-bottom: 20px;
+  padding-left: 15px;
 }
 form .input5 {
   width: 150px;
@@ -776,6 +860,7 @@ form .input5 {
   padding: 7px;
   border-radius: 12px;
   margin-bottom: 10px;
+  padding-left: 15px;
 }
 
 /*ESTILO DE PAGES MONEDEROS*/
@@ -984,11 +1069,12 @@ form .input5 {
 }
 
 /*ESTILO PARA MEDIA QUERIES*/
+/* ----------- MEDIA QUERIES PARA TABLET ---------------- */
 @media only screen and (max-width: 768px) {
   .grid2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "produc1 produc2 produc3" "produc4 produc5 produc6" "produc7 produc8 produc9" "produc10 produc11 produc12" "produc10 produc13 produc14" "produc15 produc16 produc16";
+    grid-template-areas: "produc1 produc2 produc3" "produc4 produc5 produc6" "produc7 produc8 produc9" "produc10 produc11 produc12" "produc13 produc14 produc15" "produc16 produc16 produc16";
     gap: 2em 1em;
   }
   .grid2 img {
@@ -1007,11 +1093,36 @@ form .input5 {
   .grid2 p {
     font-size: 10px;
   }
-  .grid2 .element10 img {
-    height: 100%;
+  .grid2 .element16 img {
+    width: 30%;
+  }
+}
+/* ----------- MEDIA QUERIES PARA TELEFONOS PEQUEÑOS ---------------- */
+@media only screen and (max-width: 320px) {
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "produc1 produc2" "produc3 produc4" "produc5 produc6" "produc7 produc8" "produc9 produc10" "produc11 produc12" "produc13 produc14" "produc15 produc16";
+    gap: 2em 1em;
+  }
+  .grid2 img {
+    width: 110px;
+    height: 220px;
+    margin-bottom: 10px;
+  }
+  .grid2 a {
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 7px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .grid2 p {
+    font-size: 10px;
   }
   .grid2 .element16 img {
-    width: 100%;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1132,6 +1243,7 @@ form .input5 {
     margin-bottom: 10px;
   }
 }
+/* ----------- MEDIA QUERIES PARA TABLET ---------------- */
 @media only screen and (max-width: 768px) {
   /* ----------- CARRUSEL ---------------- */
   .carousel {
@@ -1215,12 +1327,106 @@ form .input5 {
     margin-bottom: 30px;
   }
 }
+/* ----------- MEDIA QUERIES PARA TELEFONOS PEQUEÑOS ---------------- */
+@media only screen and (max-width: 320px) {
+  /* ----------- NOVEDADES ---------------- */
+  #novedades .caja-novedades img {
+    width: 286px;
+    height: 389px;
+  }
+  /* ----------- CARRUSEL ---------------- */
+  .carousel {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    overflow: scroll;
+  }
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    min-width: 100%;
+  }
+  .carousel img {
+    flex: 1 0 auto;
+    margin: 0 10px;
+    width: 250px;
+    height: 350px;
+  }
+  .carousel-inner {
+    width: 80%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev img,
+  .carousel-control-next img {
+    display: none;
+  }
+  /* ----------- SECCION DEL MONEDERO ---------------- */
+  #monederos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #monederos .info-monedero {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  #monederos .img-monedero {
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/monederos/monedero-boton.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 30px;
+  }
+  /* ----------- SECCION HISTORIA ---------------- */
+  #historia {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  #historia .video {
+    width: 310px;
+    height: 364px;
+  }
+  #historia .contenedorHistoria {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    text-align: center;
+    line-height: 28px;
+  }
+  #historia .contenedorHistoria a {
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 7px;
+    border-radius: 12px;
+  }
+  #historia .contenedorHistoria .botonHistoria {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+/* ----------- MEDIA QUERIES PARA TABLET ---------------- */
 @media only screen and (max-width: 768px) {
   /* ---------------------- PAGES MONEDEROS ------------------ */
   .grid3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "produc1 produc2 produc3" "produc4 produc5 produc3" "produc6 produc7 produc8" "produc9 produc10 produc11" "produc12 produc13 produc14" "produc15 produc16 produc16";
+    grid-template-areas: "produc1 produc2 produc3" "produc4 produc5 produc6" "produc7 produc8 produc9" "produc10 produc11 produc12" "produc13 produc14 produc15" "produc16 produc16 produc16";
     gap: 2em 1em;
   }
   .grid3 img {
@@ -1239,13 +1445,40 @@ form .input5 {
   .grid3 p {
     font-size: 10px;
   }
-  .grid3 .element3 img {
-    height: 100%;
-  }
   .grid3 .element16 img {
-    width: 100%;
+    width: 40%;
   }
 }
+/* ----------- MEDIA QUERIES PARA TELEFONOS PEQUEÑOS ---------------- */
+@media only screen and (max-width: 320px) {
+  /* ---------------------- PAGES MONEDEROS ------------------ */
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "produc1 produc2" "produc3 produc4" "produc5 produc6" "produc7 produc8" "produc9 produc10" "produc11 produc12" "produc13 produc14" "produc15 produc16";
+    gap: 2em 1em;
+  }
+  .grid3 img {
+    width: 110px;
+    height: 220px;
+    margin-bottom: 10px;
+  }
+  .grid3 a {
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 7px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .grid3 p {
+    font-size: 10px;
+  }
+  .grid3 .element16 img {
+    width: 75%;
+  }
+}
+/* ----------- MEDIA QUERIES PARA TABLET ---------------- */
 @media only screen and (max-width: 768px) {
   .contenedorProducto {
     display: flex;
@@ -1263,7 +1496,7 @@ form .input5 {
     width: 180px;
     height: 350px;
     border-radius: 30px;
-    margin-left: 15px;
+    justify-content: center;
   }
   #contenedorExtra {
     display: flex;
@@ -1273,6 +1506,34 @@ form .input5 {
   #contenedorExtra p {
     width: 90%;
     margin-left: 20px;
+  }
+}
+/* ----------- MEDIA QUERIES PARA TELEFONOS PEQUEÑOS ---------------- */
+@media only screen and (max-width: 320px) {
+  .contenedorProducto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .contenedorProducto #img-producto {
+    margin-bottom: 30px;
+  }
+  .contenedorProducto #img-producto img {
+    width: 200px;
+  }
+  .contenedorProducto #info {
+    margin-left: 0px;
+  }
+  .contenedorProducto #info h2 {
+    text-align: center;
+  }
+  .contenedorProducto #info h3 {
+    text-align: center;
+  }
+  .contenedorProducto #info p {
+    text-align: center;
   }
 }
 
